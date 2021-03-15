@@ -1,0 +1,1054 @@
+@media only screen and (min-width: 768px) {
+  // FOR DESKTOP AND TABLET
+  .toggleContainer {
+    display: none;
+  }
+  .addFormContainer {
+    .addForm {
+      display: block;
+      background-color: #f0f7ff;
+      color: #197bbd;
+      border-radius: 12px;
+      padding: 10px 20px;
+    }
+  }
+  .gridContainer {
+    margin-top: 30px;
+    .testContainer {
+      .test {
+        width: 100%;
+        color: white;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        background-color: #2d9cdb;
+        border-radius: 12px;
+      }
+    }
+    .selectContainer {
+      .selectHeading {
+        margin-bottom: 5px;
+        p {
+          font-weight: 600;
+          font-size: 14px;
+          font-family: "Lato", sans-serif;
+          color: #aeaeae;
+        }
+      }
+      .select {
+        width: 100%;
+        border-bottom: none;
+        border: 1px solid #f2f2f2;
+        border-radius: 12px;
+        height: 40px;
+      }
+    }
+  }
+  .modalContainer {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:focus {
+      outline: none !important;
+      border: none !important;
+    }
+
+    .modal {
+      min-height: 300px;
+      width: 50%;
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      &:focus {
+        outline: none !important;
+        border: none !important;
+      }
+      .fileContainer {
+        .fileNameStatusContainer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .fileName {
+            p {
+              font-size: 13px;
+              font-weight: 600;
+              font-family: "Lato", sans-serif;
+              color: #aeaeae;
+            }
+          }
+          .fileStatus {
+            p {
+              font-size: 12px;
+              font-weight: 600;
+              font-family: "Lato", sans-serif;
+            }
+            .success {
+              color: #6fcf97;
+            }
+            .error {
+              color: #eb5757;
+            }
+          }
+        }
+        .fileBox {
+          padding: 10px 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1.5px solid #f2f2f2;
+          border-radius: 12px;
+          margin-top: 15px;
+          .fileBoxLeft {
+            display: flex;
+            align-items: center;
+            .iconContainer {
+              width: 20px;
+            }
+            .file {
+              margin-left: 15px;
+              .fileName {
+                p {
+                  color: #404040;
+                  font-weight: 600;
+                  font-size: 15px;
+                  font-family: "Lato", sans-serif;
+                }
+              }
+              .fileSize {
+                p {
+                  color: #aeaeae;
+                  font-weight: 600;
+                  font-size: 15px;
+                  font-family: "Lato", sans-serif;
+                }
+              }
+            }
+          }
+          .fileBoxRight {
+            display: flex;
+            .progressContainer {
+              margin-right: 20px;
+              width: 250px;
+              .progressBar {
+                height: 5px;
+                background-color: #f2f2f2;
+                border-radius: 100px;
+              }
+              .statusContainer {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 5px;
+                .speedContainer {
+                  p {
+                    font-weight: 600;
+                    font-family: "Lato", sans-serif;
+                    font-size: 14px;
+                    color: #aeaeae;
+                  }
+                }
+                .status {
+                  p {
+                    font-weight: 600;
+                    font-family: "Lato", sans-serif;
+                    font-size: 14px;
+                    color: #209d43;
+                  }
+                }
+              }
+            }
+            .iconContainer {
+              padding: 5px;
+              background-color: rgba(235, 87, 87, 0.07);
+              border-radius: 12px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .icon {
+                width: 10px;
+                height: 10px;
+              }
+            }
+          }
+        }
+        .fileBoxError {
+          padding: 10px 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: rgba(235, 87, 87, 0.07);
+          border-radius: 12px;
+          margin-top: 8px;
+          .fileBoxLeft {
+            display: flex;
+            align-items: center;
+            .iconContainer {
+              width: 20px;
+            }
+            .file {
+              margin-left: 15px;
+              .fileName {
+                p {
+                  color: #404040;
+                  font-weight: 600;
+                  font-size: 15px;
+                  font-family: "Lato", sans-serif;
+                }
+              }
+              .fileSize {
+                p {
+                  color: #aeaeae;
+                  font-weight: 600;
+                  font-size: 15px;
+                  font-family: "Lato", sans-serif;
+                }
+              }
+            }
+          }
+          .fileBoxRight {
+            .iconContainer {
+              padding: 5px;
+              background-color: rgba(235, 87, 87, 0.07);
+              border-radius: 12px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .icon {
+                width: 10px;
+                height: 10px;
+              }
+            }
+          }
+        }
+      }
+      .uploadContainer {
+        border: 1.5px dashed #197bbd;
+        border-radius: 12px;
+        margin-top: 15px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          font-size: 15px;
+          font-weight: 600;
+          font-family: "Lato", sans-serif;
+          color: #404040;
+          span {
+            color: #197bbd;
+          }
+        }
+      }
+      .buttonsContainer {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        .submit {
+          color: white;
+          border-radius: 12px;
+          background-color: #197bbd;
+          width: 200px;
+          font-weight: 600;
+          font-size: 14px;
+          font-family: "Lato", sans-serif;
+        }
+        .cancel {
+          margin-left: 20px;
+          color: #197bbd;
+          border: 1px solid #197bbd;
+          border-radius: 12px;
+          width: 200px;
+          font-weight: 600;
+          font-size: 14px;
+          font-family: "Lato", sans-serif;
+        }
+      }
+    }
+  }
+
+  .homeContainer {
+    display: flex;
+  }
+  .mainContainer {
+    width: 100%;
+    .topContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      .headingContainer {
+        h1 {
+          color: #404040;
+          font-family: "Lato", sans-serif;
+          font-size: 44px;
+          font-weight: 700;
+        }
+        p {
+          margin-top: 5px;
+          color: #aeaeae;
+          font-family: "Lato", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      .progressContainer {
+        .progressHeading {
+          margin-bottom: 5px;
+          p {
+            color: #404040;
+            font-family: "Lato", sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+        .progressBarContainer {
+          display: flex;
+          align-items: center;
+          .iconContainer {
+            background-color: #ddf9e4;
+            padding: 8px 10px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            .icon {
+              width: 14px;
+              height: 17px;
+            }
+          }
+          .progress {
+            .progressBar {
+              display: flex;
+              align-items: center;
+              .bar {
+                width: 200px;
+                height: 10px;
+                background-color: #f1f1f1;
+                border-radius: 14px;
+              }
+              .progressPercentage {
+                margin-left: 10px;
+                margin-top: -5px;
+                p {
+                  color: #696969;
+                  font-family: "Lato", sans-serif;
+                  font-size: 20px;
+                  font-weight: 600;
+                }
+              }
+            }
+            .fileNameContainer {
+              p {
+                color: #aeaeae;
+                font-family: "Lato", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+    .accordionContainer {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      .accordion {
+        margin-top: 20px;
+        padding: 0 20px;
+        border: none;
+        outline: none;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 12px;
+        .icon {
+          border-radius: 8px;
+          background-color: rgba(174, 174, 174, 0.15);
+        }
+        .headingContainer {
+          .heading {
+            color: #404040;
+            font-family: "Lato", sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+          }
+        }
+
+        .contentContainer {
+          .content {
+            margin-top: 0px;
+            .fileContainer {
+              .fileNameStatusContainer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .fileName {
+                  p {
+                    font-size: 13px;
+                    font-weight: 600;
+                    font-family: "Lato", sans-serif;
+                    color: #aeaeae;
+                  }
+                }
+                .fileStatus {
+                  p {
+                    font-size: 12px;
+                    font-weight: 600;
+                    font-family: "Lato", sans-serif;
+                  }
+                  .success {
+                    color: #6fcf97;
+                  }
+                  .error {
+                    color: #eb5757;
+                  }
+                }
+              }
+              .fileBox {
+                padding: 10px 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1.5px solid #f2f2f2;
+                border-radius: 12px;
+                margin-top: 8px;
+                .fileBoxLeft {
+                  display: flex;
+                  align-items: center;
+                  .iconContainer {
+                    width: 20px;
+                  }
+                  .file {
+                    margin-left: 15px;
+                    .fileName {
+                      p {
+                        color: #404040;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+                    .fileSize {
+                      p {
+                        color: #aeaeae;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+                  }
+                }
+                .fileBoxRight {
+                  .iconContainer {
+                    padding: 5px;
+                    background-color: rgba(235, 87, 87, 0.07);
+                    border-radius: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .icon {
+                      width: 10px;
+                      height: 10px;
+                    }
+                  }
+                }
+              }
+              .fileBoxError {
+                padding: 10px 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgba(235, 87, 87, 0.07);
+                border-radius: 12px;
+                margin-top: 8px;
+                .fileBoxLeft {
+                  display: flex;
+                  align-items: center;
+                  .iconContainer {
+                    width: 20px;
+                  }
+                  .file {
+                    margin-left: 15px;
+                    .fileName {
+                      p {
+                        color: #404040;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+                    .fileSize {
+                      p {
+                        color: #aeaeae;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+                  }
+                }
+                .fileBoxRight {
+                  .iconContainer {
+                    padding: 5px;
+                    background-color: rgba(235, 87, 87, 0.07);
+                    border-radius: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .icon {
+                      width: 10px;
+                      height: 10px;
+                    }
+                  }
+                }
+              }
+            }
+            .uploadOnceContainer {
+              .uploadOnce {
+                font-size: 15px;
+                font-weight: 600;
+                border-radius: 12px;
+                color: #ffffff;
+                font-family: "Lato", sans-serif;
+                background-color: #2d9cdb;
+                width: 100%;
+                height: 55px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .toggleContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .addFormContainer {
+    .addForm {
+      display: block;
+      background-color: #f0f7ff;
+      color: #197bbd;
+      border-radius: 12px;
+      padding: 10px 20px;
+    }
+  }
+  .gridContainer {
+    margin-top: 30px;
+    .testContainer {
+      .test {
+        width: 100%;
+        color: white;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        background-color: #2d9cdb;
+        border-radius: 12px;
+      }
+    }
+    .selectContainer {
+      .selectHeading {
+        margin-bottom: 5px;
+        p {
+          font-weight: 600;
+          font-size: 14px;
+          font-family: "Lato", sans-serif;
+          color: #aeaeae;
+        }
+      }
+      .select {
+        width: 100%;
+        border-bottom: none;
+        border: 1px solid #f2f2f2;
+        border-radius: 12px;
+        height: 40px;
+      }
+    }
+  }
+  .modalContainer {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:focus {
+      outline: none !important;
+      border: none !important;
+    }
+
+    .modal {
+      min-height: 300px;
+      width: 50%;
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      &:focus {
+        outline: none !important;
+        border: none !important;
+      }
+      .fileContainer {
+        .fileNameStatusContainer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .fileName {
+            p {
+              font-size: 13px;
+              font-weight: 600;
+              font-family: "Lato", sans-serif;
+              color: #aeaeae;
+            }
+          }
+          .fileStatus {
+            p {
+              font-size: 12px;
+              font-weight: 600;
+              font-family: "Lato", sans-serif;
+            }
+            .success {
+              color: #6fcf97;
+            }
+            .error {
+              color: #eb5757;
+            }
+          }
+        }
+        .fileBox {
+          padding: 10px 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1.5px solid #f2f2f2;
+          border-radius: 12px;
+          margin-top: 15px;
+          .fileBoxLeft {
+            display: flex;
+            align-items: center;
+            .iconContainer {
+              width: 20px;
+            }
+            .file {
+              margin-left: 15px;
+              .fileName {
+                p {
+                  color: #404040;
+                  font-weight: 600;
+                  font-size: 15px;
+                  font-family: "Lato", sans-serif;
+                }
+              }
+              .fileSize {
+                p {
+                  color: #aeaeae;
+                  font-weight: 600;
+                  font-size: 15px;
+                  font-family: "Lato", sans-serif;
+                }
+              }
+            }
+          }
+          .fileBoxRight {
+            display: flex;
+            .progressContainer {
+              margin-right: 20px;
+              width: 250px;
+              .progressBar {
+                height: 5px;
+                background-color: #f2f2f2;
+                border-radius: 100px;
+              }
+              .statusContainer {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 5px;
+                .speedContainer {
+                  p {
+                    font-weight: 600;
+                    font-family: "Lato", sans-serif;
+                    font-size: 14px;
+                    color: #aeaeae;
+                  }
+                }
+                .status {
+                  p {
+                    font-weight: 600;
+                    font-family: "Lato", sans-serif;
+                    font-size: 14px;
+                    color: #209d43;
+                  }
+                }
+              }
+            }
+            .iconContainer {
+              padding: 5px;
+              background-color: rgba(235, 87, 87, 0.07);
+              border-radius: 12px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .icon {
+                width: 10px;
+                height: 10px;
+              }
+            }
+          }
+        }
+        .fileBoxError {
+          padding: 10px 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: rgba(235, 87, 87, 0.07);
+          border-radius: 12px;
+          margin-top: 8px;
+          .fileBoxLeft {
+            display: flex;
+            align-items: center;
+            .iconContainer {
+              width: 20px;
+            }
+            .file {
+              margin-left: 15px;
+              .fileName {
+                p {
+                  color: #404040;
+                  font-weight: 600;
+                  font-size: 15px;
+                  font-family: "Lato", sans-serif;
+                }
+              }
+              .fileSize {
+                p {
+                  color: #aeaeae;
+                  font-weight: 600;
+                  font-size: 15px;
+                  font-family: "Lato", sans-serif;
+                }
+              }
+            }
+          }
+          .fileBoxRight {
+            .iconContainer {
+              padding: 5px;
+              background-color: rgba(235, 87, 87, 0.07);
+              border-radius: 12px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .icon {
+                width: 10px;
+                height: 10px;
+              }
+            }
+          }
+        }
+      }
+      .uploadContainer {
+        border: 1.5px dashed #197bbd;
+        border-radius: 12px;
+        margin-top: 15px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          font-size: 15px;
+          font-weight: 600;
+          font-family: "Lato", sans-serif;
+          color: #404040;
+          span {
+            color: #197bbd;
+          }
+        }
+      }
+      .buttonsContainer {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        .submit {
+          color: white;
+          border-radius: 12px;
+          background-color: #197bbd;
+          width: 200px;
+          font-weight: 600;
+          font-size: 14px;
+          font-family: "Lato", sans-serif;
+        }
+        .cancel {
+          margin-left: 20px;
+          color: #197bbd;
+          border: 1px solid #197bbd;
+          border-radius: 12px;
+          width: 200px;
+          font-weight: 600;
+          font-size: 14px;
+          font-family: "Lato", sans-serif;
+        }
+      }
+    }
+  }
+
+  .homeContainer {
+    display: flex;
+  }
+  .mainContainer {
+    width: 100%;
+    .topContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+
+      .headingContainer {
+        h1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #404040;
+          font-family: "Lato", sans-serif;
+          font-size: 40px;
+          font-weight: 700;
+        }
+        p {
+          margin-top: 5px;
+          text-align: center;
+          color: #aeaeae;
+          font-family: "Lato", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      .progressContainer {
+        margin-top: 20px;
+        .progressHeading {
+          margin-bottom: 5px;
+          p {
+            color: #404040;
+            font-family: "Lato", sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+        .progressBarContainer {
+          display: flex;
+          align-items: center;
+          .iconContainer {
+            background-color: #ddf9e4;
+            padding: 8px 10px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            .icon {
+              width: 14px;
+              height: 17px;
+            }
+          }
+          .progress {
+            .progressBar {
+              display: flex;
+              align-items: center;
+              .bar {
+                width: 200px;
+                height: 10px;
+                background-color: #f1f1f1;
+                border-radius: 14px;
+              }
+              .progressPercentage {
+                margin-left: 10px;
+                margin-top: -5px;
+                p {
+                  color: #696969;
+                  font-family: "Lato", sans-serif;
+                  font-size: 20px;
+                  font-weight: 600;
+                }
+              }
+            }
+            .fileNameContainer {
+              p {
+                color: #aeaeae;
+                font-family: "Lato", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+    .accordionContainer {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      .accordion {
+        margin-top: 20px;
+        padding: 0 20px;
+        border: none;
+        outline: none;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 12px;
+        .icon {
+          border-radius: 8px;
+          background-color: rgba(174, 174, 174, 0.15);
+        }
+        .headingContainer {
+          .heading {
+            color: #404040;
+            font-family: "Lato", sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+          }
+        }
+
+        .contentContainer {
+          .content {
+            margin-top: 0px;
+            .fileContainer {
+              .fileNameStatusContainer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .fileName {
+                  p {
+                    font-size: 13px;
+                    font-weight: 600;
+                    font-family: "Lato", sans-serif;
+                    color: #aeaeae;
+                  }
+                }
+                .fileStatus {
+                  p {
+                    font-size: 12px;
+                    font-weight: 600;
+                    font-family: "Lato", sans-serif;
+                  }
+                  .success {
+                    color: #6fcf97;
+                  }
+                  .error {
+                    color: #eb5757;
+                  }
+                }
+              }
+              .fileBox {
+                padding: 10px 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1.5px solid #f2f2f2;
+                border-radius: 12px;
+                margin-top: 8px;
+                .fileBoxLeft {
+                  display: flex;
+                  align-items: center;
+                  .iconContainer {
+                    width: 20px;
+                  }
+                  .file {
+                    margin-left: 15px;
+                    .fileName {
+                      p {
+                        color: #404040;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+                    .fileSize {
+                      p {
+                        color: #aeaeae;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+                  }
+                }
+                .fileBoxRight {
+                  .iconContainer {
+                    padding: 5px;
+                    background-color: rgba(235, 87, 87, 0.07);
+                    border-radius: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .icon {
+                      width: 10px;
+                      height: 10px;
+                    }
+                  }
+                }
+              }
+              .fileBoxError {
+                padding: 10px 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgba(235, 87, 87, 0.07);
+                border-radius: 12px;
+                margin-top: 8px;
+                .fileBoxLeft {
+                  display: flex;
+                  align-items: center;
+                  .iconContainer {
+                    width: 20px;
+                  }
+                  .file {
+                    margin-left: 15px;
+                    .fileName {
+                      p {
+                        color: #404040;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+                    .fileSize {
+                      p {
+                        color: #aeaeae;
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+                  }
+                }
+                .fileBoxRight {
+                  .iconContainer {
+                    padding: 5px;
+                    background-color: rgba(235, 87, 87, 0.07);
+                    border-radius: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .icon {
+                      width: 10px;
+                      height: 10px;
+                    }
+                  }
+                }
+              }
+            }
+            .uploadOnceContainer {
+              .uploadOnce {
+                font-size: 15px;
+                font-weight: 600;
+                border-radius: 12px;
+                color: #ffffff;
+                font-family: "Lato", sans-serif;
+                background-color: #2d9cdb;
+                width: 100%;
+                height: 55px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

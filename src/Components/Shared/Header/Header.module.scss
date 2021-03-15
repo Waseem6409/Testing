@@ -1,0 +1,168 @@
+@media only screen and (min-width: 768px) {
+  // FOR DESKTOP AND TABLET
+  .mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    .searchContainer {
+      display: flex;
+      align-items: center;
+      border: 1px solid #f2f2f2;
+      width: 200px;
+      height: 30px;
+      border-radius: 12px;
+      padding-left: 10px;
+      .iconContainer {
+        width: 20px;
+        height: 20px;
+        .icon {
+          path {
+            stroke: #e3e3e3;
+          }
+        }
+      }
+      .inputContainer {
+        padding: 0 10px;
+        .input {
+          border: none;
+          outline: none;
+          width: 100%;
+          height: 100%;
+          background: transparent;
+        }
+      }
+    }
+    .profileContainer {
+      display: flex;
+      align-items: center;
+      .messageContainer {
+        width: 20px;
+        margin-right: 15px;
+        .message {
+          path {
+            fill: #e3e3e3;
+          }
+        }
+      }
+      .notificationContainer {
+        width: 20px;
+        margin-right: 15px;
+        .bell {
+          path {
+            fill: #e3e3e3;
+          }
+        }
+      }
+      .profilePictureContainer {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+        .profile {
+          border-radius: 50%;
+        }
+      }
+
+      .profileNameContainer {
+        p {
+          font-family: "Lato", sans-serif;
+          &:nth-child(1) {
+            color: #404040;
+            font-size: 14px;
+            font-weight: 700;
+          }
+
+          &:nth-child(2) {
+            color: #aeaeae;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .mainContainer {
+    display: none;
+    margin: 30px 0;
+    .searchContainer {
+      display: flex;
+      align-items: center;
+      border: 1px solid #f2f2f2;
+      width: 200px;
+      height: 30px;
+      border-radius: 12px;
+      padding-left: 10px;
+      .iconContainer {
+        width: 20px;
+        height: 20px;
+        .icon {
+          path {
+            stroke: #e3e3e3;
+          }
+        }
+      }
+      .inputContainer {
+        padding: 0 10px;
+        .input {
+          border: none;
+          outline: none;
+          width: 100%;
+          height: 100%;
+          background: transparent;
+        }
+      }
+    }
+    .profileContainer {
+      display: flex;
+      align-items: center;
+      .messageContainer {
+        width: 20px;
+        margin-right: 15px;
+        .message {
+          path {
+            fill: #e3e3e3;
+          }
+        }
+      }
+      .notificationContainer {
+        width: 20px;
+        margin-right: 15px;
+        .bell {
+          path {
+            fill: #e3e3e3;
+          }
+        }
+      }
+      .profilePictureContainer {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+        .profile {
+          border-radius: 50%;
+        }
+      }
+
+      .profileNameContainer {
+        p {
+          font-family: "Lato", sans-serif;
+          &:nth-child(1) {
+            color: #404040;
+            font-size: 14px;
+            font-weight: 700;
+          }
+
+          &:nth-child(2) {
+            color: #aeaeae;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

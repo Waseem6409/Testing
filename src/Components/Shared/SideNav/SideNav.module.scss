@@ -1,0 +1,150 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    width: 200px;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 3px solid #f8f8f8;
+    position: sticky;
+    .logoContainer {
+      width: 100px;
+      padding: 20px 0;
+    }
+    .linksContainer {
+      .link {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+        padding: 7px 15px 7px 12px;
+        border-radius: 12px;
+        .iconContainer {
+          width: 20px;
+          height: 20px;
+          .icon {
+            path {
+              stroke: #c7c7c7;
+            }
+          }
+        }
+        .nameContainer {
+          .name {
+            color: #c7c7c7;
+            font-size: 12px;
+            margin-left: 15px;
+            font-family: "Lato", sans-serif;
+            font-weight: bold;
+          }
+        }
+      }
+      .selectedLink {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+        padding: 7px 15px 7px 12px;
+        border-radius: 12px;
+        background-color: #f0f7ff;
+        .iconContainer {
+          width: 20px;
+          height: 20px;
+          .icon {
+            path {
+              stroke: #197bbd;
+            }
+          }
+        }
+        .nameContainer {
+          .name {
+            color: #197bbd;
+            font-size: 12px;
+            margin-left: 15px;
+            font-family: "Lato", sans-serif;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .showSideNav {
+    left: 0 !important;
+    transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .mainContainer {
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 3px solid #f8f8f8;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    z-index: 999;
+    transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    .logoContainer {
+      width: 100px;
+      padding: 20px 0;
+    }
+    .linksContainer {
+      .link {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+        padding: 7px 15px 7px 12px;
+        border-radius: 12px;
+        .iconContainer {
+          width: 20px;
+          height: 20px;
+          .icon {
+            path {
+              stroke: #c7c7c7;
+            }
+          }
+        }
+        .nameContainer {
+          .name {
+            color: #c7c7c7;
+            font-size: 12px;
+            margin-left: 15px;
+            font-family: "Lato", sans-serif;
+            font-weight: bold;
+          }
+        }
+      }
+      .selectedLink {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+        padding: 7px 15px 7px 12px;
+        border-radius: 12px;
+        background-color: #f0f7ff;
+        .iconContainer {
+          width: 20px;
+          height: 20px;
+          .icon {
+            path {
+              stroke: #197bbd;
+            }
+          }
+        }
+        .nameContainer {
+          .name {
+            color: #197bbd;
+            font-size: 12px;
+            margin-left: 15px;
+            font-family: "Lato", sans-serif;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

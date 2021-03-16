@@ -112,9 +112,15 @@ function Home() {
                           <p>Dropdown</p>
                         </div>
                         <Select className={styles.select}>
-                          <MenuItem value={10}>Ten</MenuItem>
-                          <MenuItem value={20}>Twenty</MenuItem>
-                          <MenuItem value={30}>Thirty</MenuItem>
+                          <MenuItem value={10} className={styles.selectItem}>
+                            Ten
+                          </MenuItem>
+                          <MenuItem value={20} className={styles.selectItem}>
+                            Twenty
+                          </MenuItem>
+                          <MenuItem value={30} className={styles.selectItem}>
+                            Thirty
+                          </MenuItem>
                         </Select>
                       </div>
                     </Grid>
@@ -124,9 +130,15 @@ function Home() {
                           <p>Dropdown</p>
                         </div>
                         <Select className={styles.select}>
-                          <MenuItem value={10}>Ten</MenuItem>
-                          <MenuItem value={20}>Twenty</MenuItem>
-                          <MenuItem value={30}>Thirty</MenuItem>
+                          <MenuItem value={10} className={styles.selectItem}>
+                            Ten
+                          </MenuItem>
+                          <MenuItem value={20} className={styles.selectItem}>
+                            Twenty
+                          </MenuItem>
+                          <MenuItem value={30} className={styles.selectItem}>
+                            Thirty
+                          </MenuItem>
                         </Select>
                       </div>
                     </Grid>

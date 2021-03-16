@@ -49,10 +49,16 @@
       }
       .select {
         width: 100%;
+        padding-left: 10px;
         border-bottom: none;
         border: 1px solid #f2f2f2;
         border-radius: 12px;
         height: 40px;
+        .selectItem {
+          &:focus {
+            background-color: transparent !important;
+          }
+        }
       }
     }
   }
@@ -605,6 +611,7 @@
       }
       .select {
         width: 100%;
+        padding-left: 10px;
         border-bottom: none;
         border: 1px solid #f2f2f2;
         border-radius: 12px;

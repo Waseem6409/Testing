@@ -3,6 +3,18 @@
   .toggleContainer {
     display: none;
   }
+  .connectFinalContainer {
+    .connectFinal {
+      width: 100%;
+      color: #ffffff;
+      background-color: #197bbd;
+      border-radius: 12px;
+      height: 40px;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: "Lato", sans-serif;
+    }
+  }
   .addFormContainer {
     .addForm {
       display: block;
@@ -127,6 +139,7 @@
           }
           .fileBoxRight {
             display: flex;
+            align-items: center;
             .progressContainer {
               margin-right: 20px;
               width: 250px;
@@ -134,6 +147,15 @@
                 height: 5px;
                 background-color: #f2f2f2;
                 border-radius: 100px;
+                position: relative;
+                .barComplete {
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  background: linear-gradient(90deg, #209d43 0%, #2bc255 100%);
+                  border-radius: 100px;
+                  z-index: 11;
+                }
               }
               .statusContainer {
                 display: flex;
@@ -271,6 +293,7 @@
   }
   .mainContainer {
     width: 100%;
+    margin-bottom: 50px;
     .topContainer {
       display: flex;
       justify-content: space-between;
@@ -325,6 +348,15 @@
                 height: 10px;
                 background-color: #f1f1f1;
                 border-radius: 14px;
+                position: relative;
+                .barComplete {
+                  position: absolute;
+                  height: 100%;
+                  width: 52%;
+                  border-radius: 14px;
+                  background: linear-gradient(90deg, #209d43 0%, #2bc255 100%);
+                  z-index: 11;
+                }
               }
               .progressPercentage {
                 margin-left: 10px;
@@ -521,11 +553,23 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  .connectFinalContainer {
+    .connectFinal {
+      width: 100%;
+      color: #ffffff;
+      background-color: #197bbd;
+      border-radius: 12px;
+      height: 40px;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: "Lato", sans-serif;
+    }
+  }
   /* phones */
   .toggleContainer {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   .addFormContainer {
     .addForm {
@@ -580,9 +624,9 @@
 
     .modal {
       min-height: 300px;
-      width: 50%;
+      width: 98%;
       background-color: white;
-      padding: 20px 30px;
+      padding: 20px 15px;
       border-radius: 12px;
       &:focus {
         outline: none !important;
@@ -651,13 +695,23 @@
           }
           .fileBoxRight {
             display: flex;
+            align-items: center;
             .progressContainer {
               margin-right: 20px;
-              width: 250px;
+              width: 110px;
               .progressBar {
                 height: 5px;
                 background-color: #f2f2f2;
                 border-radius: 100px;
+                position: relative;
+                .barComplete {
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  background: linear-gradient(90deg, #209d43 0%, #2bc255 100%);
+                  border-radius: 100px;
+                  z-index: 11;
+                }
               }
               .statusContainer {
                 display: flex;
@@ -688,6 +742,7 @@
               display: flex;
               justify-content: center;
               align-items: center;
+              height: 20px;
               .icon {
                 width: 10px;
                 height: 10px;
@@ -795,6 +850,7 @@
   }
   .mainContainer {
     width: 100%;
+    margin-bottom: 40px;
     .topContainer {
       display: flex;
       justify-content: center;
@@ -857,6 +913,15 @@
                 height: 10px;
                 background-color: #f1f1f1;
                 border-radius: 14px;
+                position: relative;
+                .barComplete {
+                  position: absolute;
+                  height: 100%;
+                  width: 52%;
+                  border-radius: 14px;
+                  background: linear-gradient(90deg, #209d43 0%, #2bc255 100%);
+                  z-index: 11;
+                }
               }
               .progressPercentage {
                 margin-left: 10px;

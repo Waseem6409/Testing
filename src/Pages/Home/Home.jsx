@@ -11,6 +11,7 @@ import {
   MenuItem,
 } from "@material-ui/core";
 import { ReactComponent as File } from "../../Assets/Home/File.svg";
+import { ReactComponent as Upload } from "../../Assets/Home/Upload.svg";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
@@ -25,13 +26,13 @@ import { ReactComponent as Cross } from "../../Assets/Home/Cross.svg";
 
 function Home() {
   const [sideNav, setSideNav] = useState(false);
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(true);
@@ -46,7 +47,7 @@ function Home() {
         <SideNav sideNav={sideNav} setSideNav={setSideNav} />
       </div>
       <div className={styles.mainContainer}>
-        <div classname={styles.toggleContainer}>
+        <div className={styles.toggleContainer}>
           <Button onClick={() => setSideNav(true)}>
             <MenuIcon />
           </Button>
@@ -68,7 +69,9 @@ function Home() {
                 </div>
                 <div className={styles.progress}>
                   <div className={styles.progressBar}>
-                    <div className={styles.bar}></div>
+                    <div className={styles.bar}>
+                      <div className={styles.barComplete}></div>
+                    </div>
                     <div className={styles.progressPercentage}>
                       <p>52%</p>
                     </div>
@@ -200,7 +203,9 @@ function Home() {
                         </div>
                         <div className={styles.fileBoxRight}>
                           <div className={styles.progressContainer}>
-                            <div className={styles.progressBar}></div>
+                            <div className={styles.progressBar}>
+                              <div className={styles.barComplete}></div>
+                            </div>
                             <div className={styles.statusContainer}>
                               <div className={styles.speedContainer}>
                                 <p>95 kb/s</p>
@@ -243,7 +248,9 @@ function Home() {
                         </div>
                         <div className={styles.fileBoxRight}>
                           <div className={styles.progressContainer}>
-                            <div className={styles.progressBar}></div>
+                            <div className={styles.progressBar}>
+                              <div className={styles.barComplete}></div>
+                            </div>
                             <div className={styles.statusContainer}>
                               <div className={styles.speedContainer}>
                                 <p>95 kb/s</p>
@@ -286,7 +293,9 @@ function Home() {
                         </div>
                         <div className={styles.fileBoxRight}>
                           <div className={styles.progressContainer}>
-                            <div className={styles.progressBar}></div>
+                            <div className={styles.progressBar}>
+                              <div className={styles.barComplete}></div>
+                            </div>
                             <div className={styles.statusContainer}>
                               <div className={styles.speedContainer}>
                                 <p>95 kb/s</p>
@@ -469,80 +478,78 @@ function Home() {
                         <div className={styles.fileName}>
                           <p>File 1</p>
                         </div>
-                        <div className={styles.fileStatus}>
+                        <div
+                          className={styles.fileStatus}
+                          style={{ display: "none" }}
+                        >
                           <p className={styles.success}>Successful</p>
                         </div>
                       </div>
                       <div className={styles.fileBox}>
                         <div className={styles.fileBoxLeft}>
-                          <div className={styles.iconContainer}>
-                            <Figma
-                              width="100%"
-                              height="100%"
-                              className={styles.icon}
-                            />
-                          </div>
-                          <div className={styles.file}>
-                            <div className={styles.fileName}>
-                              <p>New Design.fig</p>
-                            </div>
-                            <div className={styles.fileSize}>
-                              <p>126 mb</p>
-                            </div>
-                          </div>
+                          <p
+                            style={{
+                              fontFamily: "Lato",
+                              fontWeight: "600",
+                              fontSize: "15px",
+                              color: "#aeaeae",
+                            }}
+                          >
+                            Select a file to upload
+                          </p>
                         </div>
                         <div className={styles.fileBoxRight}>
-                          <div className={styles.iconContainer}>
-                            <Cross
+                          <div style={{ width: "40px", height: "40px" }}>
+                            <Upload
                               width="100%"
                               height="100%"
-                              className={styles.icon}
+                              style={{ width: "40px", height: "40px" }}
                             />
                           </div>
                         </div>
                       </div>
                     </div>
                   </Grid>
+
                   <Grid item xs={12} md={6}>
                     <div className={styles.fileContainer}>
                       <div className={styles.fileNameStatusContainer}>
                         <div className={styles.fileName}>
                           <p>File 1</p>
                         </div>
-                        <div className={styles.fileStatus}>
+                        <div
+                          className={styles.fileStatus}
+                          style={{ display: "none" }}
+                        >
                           <p className={styles.success}>Successful</p>
                         </div>
                       </div>
                       <div className={styles.fileBox}>
                         <div className={styles.fileBoxLeft}>
-                          <div className={styles.iconContainer}>
-                            <Figma
-                              width="100%"
-                              height="100%"
-                              className={styles.icon}
-                            />
-                          </div>
-                          <div className={styles.file}>
-                            <div className={styles.fileName}>
-                              <p>New Design.fig</p>
-                            </div>
-                            <div className={styles.fileSize}>
-                              <p>126 mb</p>
-                            </div>
-                          </div>
+                          <p
+                            style={{
+                              fontFamily: "Lato",
+                              fontWeight: "600",
+                              fontSize: "15px",
+                              color: "#aeaeae",
+                            }}
+                          >
+                            Select a file to upload
+                          </p>
                         </div>
                         <div className={styles.fileBoxRight}>
-                          <div className={styles.iconContainer}>
-                            <Cross
+                          <div style={{ width: "40px", height: "40px" }}>
+                            <Upload
                               width="100%"
                               height="100%"
-                              className={styles.icon}
+                              style={{ width: "40px", height: "40px" }}
                             />
                           </div>
                         </div>
                       </div>
                     </div>
                   </Grid>
+
                   <Grid item xs={12} md={6}>
                     <div className={styles.uploadOnceContainer}>
                       <Button
@@ -557,6 +564,13 @@ function Home() {
               </AccordionDetails>
             </Accordion>
           </div>
+          <Grid container>
+            <Grid item md={4} sm={6} xs={6}>
+              <div className={styles.connectFinalContainer}>
+                <Button className={styles.connectFinal}>Connect</Button>
+              </div>
+            </Grid>
+          </Grid>
         </Container>
       </div>
     </div>

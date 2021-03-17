@@ -597,6 +597,9 @@
         font-size: 14px;
         background-color: #2d9cdb;
         border-radius: 12px;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
     .selectContainer {

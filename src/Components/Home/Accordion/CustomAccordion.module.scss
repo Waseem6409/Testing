@@ -275,6 +275,12 @@
       color: #197bbd;
       border-radius: 12px;
       padding: 10px 20px;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: "Lato", sans-serif;
+      &:hover {
+        background-color: #f0f7ff;
+      }
     }
   }
   .accordionContainer {
@@ -449,6 +455,21 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .addFormContainer {
+    .addForm {
+      display: block;
+      background-color: #f0f7ff;
+      color: #197bbd;
+      border-radius: 12px;
+      padding: 10px 20px;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: "Lato", sans-serif;
+      &:hover {
+        background-color: #f0f7ff;
+      }
+    }
+  }
   .accordionContainer {
     margin-top: 50px;
     margin-bottom: 30px;

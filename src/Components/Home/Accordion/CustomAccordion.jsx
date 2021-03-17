@@ -4,18 +4,10 @@ import Accordion from "@material-ui/core/Accordion";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { ReactComponent as File } from "../../../Assets/Home/File.svg";
 import { ReactComponent as Upload } from "../../../Assets/Home/Upload.svg";
 import { ReactComponent as Figma } from "../../../Assets/Home/Figma.svg";
 import { ReactComponent as Cross } from "../../../Assets/Home/Cross.svg";
-import {
-  Container,
-  Button,
-  makeStyles,
-  Select,
-  MenuItem,
-  TextField,
-} from "@material-ui/core";
+import { Button, Select, MenuItem, TextField } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";

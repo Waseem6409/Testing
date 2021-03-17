@@ -3,13 +3,7 @@ import Header from "../../Components/Shared/Header/Header";
 import SideNav from "../../Components/Shared/SideNav/SideNav";
 import styles from "./Home.module.scss";
 import "./Home.css";
-import {
-  Container,
-  Button,
-  makeStyles,
-  Select,
-  MenuItem,
-} from "@material-ui/core";
+import { Container, Button } from "@material-ui/core";
 import { ReactComponent as File } from "../../Assets/Home/File.svg";
 import MenuIcon from "@material-ui/icons/Menu";
 import CustomAccordion from "../../Components/Home/Accordion/CustomAccordion";
@@ -17,7 +11,7 @@ import Grid from "@material-ui/core/Grid";
 
 function Home() {
   const [sideNav, setSideNav] = useState(false);
-  
+
   return (
     <div className={styles.homeContainer}>
       <div className={styles.sideNavContainer}>
@@ -64,7 +58,13 @@ function Home() {
           <Grid container>
             <Grid item md={4} sm={6} xs={6}>
               <div className={styles.connectFinalContainer}>
-                <Button className={styles.connectFinal}>Connect</Button>
+                <Button
+                  color="primary"
+                  variant="contained"
+                  className={styles.connectFinal}
+                >
+                  Connect
+                </Button>
               </div>
             </Grid>
           </Grid>

@@ -7,11 +7,14 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { ReactComponent as Upload } from "../../../Assets/Home/Upload.svg";
 import { ReactComponent as Figma } from "../../../Assets/Home/Figma.svg";
 import { ReactComponent as Cross } from "../../../Assets/Home/Cross.svg";
-import { Button, Select, MenuItem, TextField } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
+import CustomInput from "../Input/CustomInput";
+import CustomDropdown from "../CustomDropdown/CustomDropdown";
+import CustomModal from "../Modal/CustomModal";
 
 function CustomAccordion() {
   const [expanded, setExpanded] = useState(false);
@@ -55,55 +58,20 @@ function CustomAccordion() {
           <div className={styles.gridContainer}>
             <Grid container spacing={4}>
               <Grid item xs={12} md={4}>
-                <div className={styles.selectContainer}>
-                  <div className={styles.selectHeading}>
-                    <p>Dropdown</p>
-                  </div>
-                  <Select className={styles.select}>
-                    <MenuItem value={10} className={styles.selectItem}>
-                      Ten
-                    </MenuItem>
-                    <MenuItem value={20} className={styles.selectItem}>
-                      Twenty
-                    </MenuItem>
-                    <MenuItem value={30} className={styles.selectItem}>
-                      Thirty
-                    </MenuItem>
-                  </Select>
-                </div>
+                <CustomDropdown />
               </Grid>
               <Grid item xs={12} md={4}>
-                <div className={styles.selectContainer}>
-                  <div className={styles.selectHeading}>
-                    <p>Connection</p>
-                  </div>
-
-                  <TextField className={styles.select} />
-                </div>
+                <CustomInput />
               </Grid>
             </Grid>
           </div>
           <div className={styles.gridContainer}>
             <Grid container spacing={4} alignItems="flex-end">
               <Grid item xs={12} md={4}>
-                <div className={styles.selectContainer}>
-                  <div className={styles.selectHeading}>
-                    <p>Dropdown</p>
-                  </div>
-                  <Select className={styles.select}>
-                    <MenuItem value={10}>Ten</MenuItem>
-                    <MenuItem value={20}>Twenty</MenuItem>
-                    <MenuItem value={30}>Thirty</MenuItem>
-                  </Select>
-                </div>
+                <CustomDropdown />
               </Grid>
               <Grid item xs={12} md={4}>
-                <div className={styles.selectContainer}>
-                  <div className={styles.selectHeading}>
-                    <p>Password</p>
-                  </div>
-                  <TextField className={styles.select} />
-                </div>
+                <CustomInput />
               </Grid>
               <Grid item xs={12} md={4}>
                 <div className={styles.testContainer}>
@@ -114,171 +82,7 @@ function CustomAccordion() {
           </div>
         </AccordionDetails>
       </Accordion>
-      <Modal
-        aria-labelledby="transition-modal-title"
-        aria-describedby="transition-modal-description"
-        open={open}
-        onClose={handleClose}
-        className={styles.modalContainer}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={open}>
-          <div className={styles.modal}>
-            <Grid item xs={12} md={12}>
-              <div className={styles.fileContainer}>
-                <div className={styles.fileBox}>
-                  <div className={styles.fileBoxLeft}>
-                    <div className={styles.iconContainer}>
-                      <Figma
-                        width="100%"
-                        height="100%"
-                        className={styles.icon}
-                      />
-                    </div>
-                    <div className={styles.file}>
-                      <div className={styles.fileName}>
-                        <p>New Design.fig</p>
-                      </div>
-                      <div className={styles.fileSize}>
-                        <p>126 mb</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.fileBoxRight}>
-                    <div className={styles.progressContainer}>
-                      <div className={styles.progressBar}>
-                        <div className={styles.barComplete}></div>
-                      </div>
-                      <div className={styles.statusContainer}>
-                        <div className={styles.speedContainer}>
-                          <p>95 kb/s</p>
-                        </div>
-                        <div className={styles.status}>
-                          <p>Completed</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.iconContainer}>
-                      <Cross
-                        width="100%"
-                        height="100%"
-                        className={styles.icon}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Grid>
-            <Grid item xs={12} md={12}>
-              <div className={styles.fileContainer}>
-                <div className={styles.fileBox}>
-                  <div className={styles.fileBoxLeft}>
-                    <div className={styles.iconContainer}>
-                      <Figma
-                        width="100%"
-                        height="100%"
-                        className={styles.icon}
-                      />
-                    </div>
-                    <div className={styles.file}>
-                      <div className={styles.fileName}>
-                        <p>New Design.fig</p>
-                      </div>
-                      <div className={styles.fileSize}>
-                        <p>126 mb</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.fileBoxRight}>
-                    <div className={styles.progressContainer}>
-                      <div className={styles.progressBar}>
-                        <div className={styles.barComplete}></div>
-                      </div>
-                      <div className={styles.statusContainer}>
-                        <div className={styles.speedContainer}>
-                          <p>95 kb/s</p>
-                        </div>
-                        <div className={styles.status}>
-                          <p>Completed</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.iconContainer}>
-                      <Cross
-                        width="100%"
-                        height="100%"
-                        className={styles.icon}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Grid>
-            <Grid item xs={12} md={12}>
-              <div className={styles.fileContainer}>
-                <div className={styles.fileBox}>
-                  <div className={styles.fileBoxLeft}>
-                    <div className={styles.iconContainer}>
-                      <Figma
-                        width="100%"
-                        height="100%"
-                        className={styles.icon}
-                      />
-                    </div>
-                    <div className={styles.file}>
-                      <div className={styles.fileName}>
-                        <p>New Design.fig</p>
-                      </div>
-                      <div className={styles.fileSize}>
-                        <p>126 mb</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.fileBoxRight}>
-                    <div className={styles.progressContainer}>
-                      <div className={styles.progressBar}>
-                        <div className={styles.barComplete}></div>
-                      </div>
-                      <div className={styles.statusContainer}>
-                        <div className={styles.speedContainer}>
-                          <p>95 kb/s</p>
-                        </div>
-                        <div className={styles.status}>
-                          <p>Completed</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.iconContainer}>
-                      <Cross
-                        width="100%"
-                        height="100%"
-                        className={styles.icon}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Grid>
-            <Grid sm={12} md={12}>
-              <div className={styles.uploadContainer}>
-                <p>
-                  Drag or <span>Browse</span> files to upload
-                </p>
-              </div>
-            </Grid>
-            <div className={styles.buttonsContainer}>
-              <Button className={styles.submit}>Submit</Button>
-              <Button className={styles.cancel} onClick={handleClose}>
-                Cancel
-              </Button>
-            </div>
-          </div>
-        </Fade>
-      </Modal>
+      <CustomModal open={open} handleClose={handleClose} />
       <Accordion
         className={styles.accordion}
         expanded={expanded === "panel2"}

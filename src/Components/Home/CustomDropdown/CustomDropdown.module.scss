@@ -1,0 +1,47 @@
+@media only screen and (min-width: 768px) {
+  .selectContainer {
+    .selectHeading {
+      margin-bottom: 5px;
+      p {
+        font-weight: 600;
+        font-size: 14px;
+        font-family: "Lato", sans-serif;
+        color: #aeaeae;
+      }
+    }
+    .select {
+      width: 100%;
+      padding-left: 10px;
+      border-bottom: none;
+      border: 1px solid #f2f2f2;
+      border-radius: 12px;
+      height: 40px;
+      .selectItem {
+        &:focus {
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .selectContainer {
+    .selectHeading {
+      margin-bottom: 5px;
+      p {
+        font-weight: 600;
+        font-size: 14px;
+        font-family: "Lato", sans-serif;
+        color: #aeaeae;
+      }
+    }
+    .select {
+      width: 100%;
+      padding-left: 10px;
+      border-bottom: none;
+      border: 1px solid #f2f2f2;
+      border-radius: 12px;
+      height: 40px;
+    }
+  }
+}

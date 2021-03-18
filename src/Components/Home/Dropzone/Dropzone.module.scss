@@ -1,0 +1,19 @@
+
+.uploadContainer {
+    border: 1.5px dashed #197bbd;
+    border-radius: 12px;
+    margin-top: 15px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 15px;
+      font-weight: 600;
+      font-family: "Lato", sans-serif;
+      color: #404040;
+      span {
+        color: #197bbd;
+      }
+    }
+  }

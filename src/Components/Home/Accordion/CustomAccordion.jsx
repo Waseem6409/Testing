@@ -9,9 +9,7 @@ import { ReactComponent as Figma } from "../../../Assets/Home/Figma.svg";
 import { ReactComponent as Cross } from "../../../Assets/Home/Cross.svg";
 import { Button } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-import Modal from "@material-ui/core/Modal";
-import Backdrop from "@material-ui/core/Backdrop";
-import Fade from "@material-ui/core/Fade";
+
 import CustomInput from "../Input/CustomInput";
 import CustomDropdown from "../CustomDropdown/CustomDropdown";
 import CustomModal from "../Modal/CustomModal";

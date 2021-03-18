@@ -3,11 +3,11 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import { Button } from "@material-ui/core";
-import { ReactComponent as Upload } from "../../../Assets/Home/Upload.svg";
 import { ReactComponent as Figma } from "../../../Assets/Home/Figma.svg";
 import { ReactComponent as Cross } from "../../../Assets/Home/Cross.svg";
 import styles from "./CustomModal.module.scss";
 import Grid from "@material-ui/core/Grid";
+import Dropzone from "../Dropzone/Dropzone";
 
 function CustomModal({ handleClose, open }) {
   return (
@@ -137,11 +137,7 @@ function CustomModal({ handleClose, open }) {
             </div>
           </Grid>
           <Grid sm={12} md={12}>
-            <div className={styles.uploadContainer}>
-              <p>
-                Drag or <span>Browse</span> files to upload
-              </p>
-            </div>
+            <Dropzone />
           </Grid>
           <div className={styles.buttonsContainer}>
             <Button className={styles.submit}>Submit</Button>
